@@ -24,16 +24,16 @@
         @yield('footer')
     </div>
 
-    <div class="hide">
+    {{--<div class="hide">
         @include('front.popups.sponsor_form')
         @include('front.popups.thank')
         <a href="#thanks" class="thank"></a>
-    </div>
+    </div>--}}
 
-    @include('front.scripts')
+    {{--@include('front.scripts')
     @include('front.metriks')
     @yield('scripts')
-    @yield('metriks')
+    @yield('metriks')--}}
 
 {{--    {!! $scripts->before_close_field !!}--}}
 
