@@ -2,8 +2,8 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-size: 16px;
   font-family: @defaultFont;
+  box-sizing: border-box;
   &:focus, &:hover{
     outline: none
   }
@@ -14,10 +14,30 @@
 @import 'core/mixins';
 @import 'core/text';
 
-/*other folder*/
-@import 'other/magnific-popup';
-@import 'other/popup';
-@import 'other/recaptcha';
 
-/*desctop folder*/
-@import 'desktop/common';
+/*blocks folder*/
+@import 'blocks/include-source';
+@import 'blocks/small-blocks';
+@import 'blocks/btn';
+@import 'blocks/col-average';
+@import 'blocks/col-big';
+@import 'blocks/col-small';
+@import 'blocks/container';
+@import 'blocks/content';
+@import 'blocks/footer';
+@import 'blocks/header';
+@import 'blocks/last-news';
+@import 'blocks/main-topics';
+@import 'blocks/news-box';
+@import 'blocks/news-cart';
+@import 'blocks/photoreport';
+@import 'blocks/popular-videos';
+@import 'blocks/readers-questions';
+@import 'blocks/situation-info';
+@import 'blocks/socials';
+
+
+/*other folder*/
+/*@import 'other/magnific-popup';
+@import 'other/popup';
+@import 'other/recaptcha';*/

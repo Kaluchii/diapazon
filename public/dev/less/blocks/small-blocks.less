@@ -1,0 +1,31 @@
+/*
+              В этом файле описываются глобальные стили и
+              стили часто повторяющихся блоков используемых в качестве примесей
+*/
+
+.main-wrapper{
+  background-color: #e0e0e0;
+}
+
+.link-parent{
+  &:hover{
+    .link{
+      cursor: pointer;
+      background: -moz-linear-gradient(to left, #c80606, #c80606 100%);
+      background: -ms-linear-gradient(to left, #c80606, #c80606 100%);
+      background: -o-linear-gradient(to left, #c80606, #c80606 100%);
+      background: -webkit-gradient(linear, 0 0, 100% 0, from(#c80606), to(#c80606));
+      background: -webkit-linear-gradient(to left, #c80606, #c80606 100%);
+      background: linear-gradient(to left, #c80606, #c80606 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c80606', endColorstr='#c80606', GradientType=0);
+      background-position: 0 100%;
+      background-size: 10px 1px;
+      background-repeat: repeat-x;
+      color: #c80606;
+    }
+  }
+}
+
+.link{
+  .link(@link-color,@hover-color,@hover-border);
+}
