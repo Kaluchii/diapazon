@@ -1,13 +1,23 @@
-.grey-btn{
-  padding: 8px 14px;
+.btn{
+  height: 30px;
+  padding: 0 14px;
   background-color: #ffffff;
   font-size: 14px;
-  border: 1px solid #999999;
   color: #666666;
   border-radius: 4px;
-  box-shadow: 0 1px 1px #cccccc;
   cursor: pointer;
   transition: .2s;
+
+  &--grey{
+    box-shadow: 0 1px 1px #aaaaaa;
+    border: 1px solid #999999;
+  }
+
+  &--big{
+    height: 40px;
+    padding: 0 55px;
+    font-size: 16px;
+  }
 
   &:hover{
     box-shadow: none;

@@ -11,21 +11,44 @@
   &:hover{
     .link{
       cursor: pointer;
-      background: -moz-linear-gradient(to left, #c80606, #c80606 100%);
-      background: -ms-linear-gradient(to left, #c80606, #c80606 100%);
-      background: -o-linear-gradient(to left, #c80606, #c80606 100%);
-      background: -webkit-gradient(linear, 0 0, 100% 0, from(#c80606), to(#c80606));
-      background: -webkit-linear-gradient(to left, #c80606, #c80606 100%);
-      background: linear-gradient(to left, #c80606, #c80606 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c80606', endColorstr='#c80606', GradientType=0);
+      background: -moz-linear-gradient(to left, #cc0000, #cc0000 100%);
+      background: -ms-linear-gradient(to left, #cc0000, #cc0000 100%);
+      background: -o-linear-gradient(to left, #cc0000, #cc0000 100%);
+      background: -webkit-gradient(linear, 0 0, 100% 0, from(#cc0000), to(#cc0000));
+      background: -webkit-linear-gradient(to left, #cc0000, #cc0000 100%);
+      background: linear-gradient(to left, #cc0000, #cc0000 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc0000', endColorstr='#cc0000', GradientType=0);
       background-position: 0 100%;
       background-size: 10px 1px;
       background-repeat: repeat-x;
-      color: #c80606;
+      color: #cc0000;
+    }
+
+    .pink-link{
+      cursor: pointer;
+      background: -moz-linear-gradient(to left, #ff9999, #ff9999 100%);
+      background: -ms-linear-gradient(to left, #ff9999, #ff9999 100%);
+      background: -o-linear-gradient(to left, #ff9999, #ff9999 100%);
+      background: -webkit-gradient(linear, 0 0, 100% 0, from(#ff9999), to(#ff9999));
+      background: -webkit-linear-gradient(to left, #ff9999, #ff9999 100%);
+      background: linear-gradient(to left, #ff9999, #ff9999 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff9999', endColorstr='#ff9999', GradientType=0);
+      background-position: 0 100%;
+      background-size: 10px 1px;
+      background-repeat: repeat-x;
+      color: #ff9999;
+    }
+
+    .link-preview{
+      box-shadow: 0 0 0 2px #cc0000;
     }
   }
 }
 
 .link{
   .link(@link-color,@hover-color,@hover-border);
+}
+
+.pink-link{
+  .link(@link-color, #ff9999, #ff9999);
 }

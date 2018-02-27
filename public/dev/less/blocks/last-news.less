@@ -3,21 +3,27 @@
   background-color: #ffffff;
 
   &__title{
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
     color: #333333;
   }
 
   &__list{
-    padding: 0 10px 10px 0;
+    margin-top: 20px;
+    padding: 0 10px 15px 0;
     border-bottom: 1px solid #cccccc;
   }
 
   &__item{
-    margin-top: 25px;
+    line-height: 1.5;
+
+    &:nth-child(n+2){
+      margin-top: 25px;
+    }
   }
 
   &__name{
+    display: block;
     font-size: 14px;
 
     &--important{
@@ -32,6 +38,7 @@
   &__meta-row{
     margin-top: 5px;
     font-size: 12px;
+    line-height: 1;
   }
 
   &__pub-time{
@@ -55,7 +62,7 @@
     }
 
     &:hover{
-      color: #c80606;
+      color: #cc0000;
 
       &::before{
         background: url("/img/comment_h.png") no-repeat center;

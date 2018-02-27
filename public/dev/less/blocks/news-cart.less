@@ -13,7 +13,7 @@
   }
 
   &__name-wrap{
-    margin-top: 10px;
+    margin-top: 15px;
     line-height: 1.2;
   }
 
@@ -28,8 +28,9 @@
   }
 
   &__description{
-    margin-top: 15px;
+    margin-top: 10px;
     font-size: 14px;
+    line-height: 1.5;
     color: #666666;
   }
 
@@ -43,7 +44,7 @@
 
   &__comments{
     position: relative;
-    margin-left: 8px;
+    margin-left: 12px;
     padding-left: 22px;
     color: #999999;
 
@@ -58,17 +59,21 @@
     }
 
     &:hover{
-      color: #c80606;
+      color: #cc0000;
 
       &::before{
         background: url("/img/comment_h.png") no-repeat center;
       }
     }
+
+    &--big{
+      margin-left: 16px;
+    }
   }
 
   &__views{
     position: relative;
-    margin-left: 8px;
+    margin-left: 12px;
     padding-left: 22px;
 
     &::before{
@@ -79,6 +84,10 @@
       width: 18px;
       height: 13px;
       background: url("/img/views.png") no-repeat center;
+    }
+
+    &--big{
+      margin-left: 16px;
     }
   }
 }
