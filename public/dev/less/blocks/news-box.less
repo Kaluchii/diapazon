@@ -1,6 +1,17 @@
 .news-box{
   padding: 20px 20px 35px;
 
+  &__title{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #333333;
+
+    &+.news-box__list{
+      margin-top: 15px;
+    }
+  }
+
   &__list{
     display: flex;
     justify-content: space-between;

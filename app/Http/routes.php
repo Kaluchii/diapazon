@@ -12,6 +12,7 @@
 */
 
 Route::get('/',                 'FrontController@getIndex');
+Route::get('/publication',      'FrontController@getPublication');
 
 
 Route::post('/captcha',          'Back\MailController@Captcha');
