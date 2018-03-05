@@ -30,12 +30,12 @@
         <a href="#thanks" class="thank"></a>
     </div>--}}
 
-    {{--@include('front.scripts')
-    @include('front.metriks')
-    @yield('scripts')
+    {{--@include('front.metriks')
     @yield('metriks')--}}
 
 {{--    {!! $scripts->before_close_field !!}--}}
+@include('front.scripts')
+@yield('scripts')
 
 </body>
 </html>

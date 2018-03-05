@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/mobile.css">
+    <link rel="stylesheet" href="../../js/jquery.min.js">
+    <link rel="stylesheet" href="../../js/fotorama.js">
 </head>
 <body>
 <div class="main-wrapper">
@@ -66,8 +68,8 @@
 
             <div class="container__col-average col-average">
                 <div class="col-average__last-news last-news">
-                    <p class="last-news__title">Последние новости</p>
-                    <ul class="last-news__list">
+                    <p class="last-news__title">Свежие новости</p>
+                    <ul class="last-news__list last-news__list--fresh">
                         <li class="last-news__item">
                             <a href="#" class="last-news__name link-parent">
                                 <span class="last-news__link link">Крупный рост продаж доллара, евро и рубля произошел в обменниках РК</span>
@@ -159,48 +161,99 @@
                             </div>
                         </li>
                     </ul>
-                    <div class="last-news__btn-wrap">
-                        <button class="last-news__btn btn btn--grey">Загрузить еще</button>
-                    </div>
                 </div>
+
+                <div class="col-average__banner banner">
+                    <img src="../../dev_img/banner_l.jpg" alt="">
+                </div>
+
             </div>
 
 
             <div class="container__col-big col-big">
 
-                <div class="col-big__title-block">
-                    <div class="col-big__big-news news-cart news-cart--big">
-                        <a href="#" class="news-cart__link link-parent">
-                            <img src="../../dev_img/pl_470x300.jpg" alt="" class="news-cart__preview link-preview">
-                            <p class="news-cart__name-wrap">
-                                <span class="news-cart__name news-cart__name--big link">Пожарный вернул найденный возле мечети миллион тенге в ЗКО</span>
-                            </p>
-                        </a>
-                        <p class="news-cart__description">В кошельке находилось около 1 миллиона тенге и личные документы владельца, среди которых были контакты владельца.</p>
-                        <div class="news-cart__meta-row">
-                            <span class="news-cart__pub-time">08:25</span>
-                            <span class="news-cart__comments news-cart__comments--big">54</span>
-                            <span class="news-cart__views news-cart__views--big">214</span>
+                <div class="col-big__publication publication">
+                    <div class="publication__header">
+                        <p class="publication__breadcrumbs breadcrumbs">
+                            <span class="breadcrumbs__level"><a href="#" class="breadcrumbs__link grey-link">Главная</a></span>
+                            <span class="breadcrumbs__delimiter"> — </span>
+                            <span class="breadcrumbs__level"><a href="#" class="breadcrumbs__link grey-link">Проишествия</a></span>
+                            <span class="breadcrumbs__delimiter"> — </span>
+                            <span class="breadcrumbs__level"><a href="#" class="breadcrumbs__link grey-link">В мире</a></span>
+                        </p>
+                        <p class="publication__info">25 января 08:25<span class="publication__info-delimiter"> • </span>254 просмотра</p>
+                    </div>
+
+                    <div class="publication__content content-block">
+                        <h1>Лучшее за неделю: успехи SpaceX и других космических проектов, ребрендинг «Кофе хауза» и обзор рынка подкастов</h1>
+                        <p class="content-block__sub-title"><strong>Подборка самых популряных новостей и материалов за неделю в одном месте.</strong></p>
+                        <div class="content-block__share-row">
+                            <div id="fb-root"></div>
+                            <script>(function(d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0];
+                                if (d.getElementById(id)) return;
+                                js = d.createElement(s); js.id = id;
+                                js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.12';
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }(document, 'script', 'facebook-jssdk'));</script>
+                            <div class="fb-share-button" data-href="" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Поделиться</a></div>
+                        </div>
+                        <h2>Запуск сверхтяжёлой ракеты Falcon Heavy</h2>
+                        <figure>
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/Rqf3J4ZOPCw" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+                            <figcaption>Автор видео — Space X</figcaption>
+                        </figure>
+                        <p>7 февраля <a href="#">SpaceX</a> осуществила первый запуск сверхтяжелой ракеты Falcon Heavy с автомобилем Tesla Roadster в качестве утяжелителя и космическим скафандром на борту. SpaceX успешно посадила боковые ускорители ракеты на платформы на суше, центральный ускоритель разбился при посадке и повредил плавучую платформу, а автомобиль
+                            <a href="#">Tesla</a> с скафандром за рулём улетела в сторону пояса астероидов.
+                        </p>
+                        <p>Собрали несколько шуток по мотивам запуска — и реакцию брендов на событие. А издание National Geographic опубликовало видео, на котором запечатлена реакция главы компании Илона Маска на взлёт ракеты.</p>
+                        <h2>Ребрендинг «Кофе хауза»</h2>
+                        <p>Сеть кофеен «Кофе хауз» представила новый фирменный стиль и концепцию заведений. Ребрендинг будет проведён в 2018 году. В новых заведениях не будет официантов, а позиционировать «Кофе хауз» его владелец собирается как сеть кофеен быстрого обслуживания.</p>
+                        <div class="content-block__gallery">
+                            <div class="fotorama" data-nav="thumbs" data-navwidth="78.9473685%" data-thumbmargin="10" data-thumbborderwidth="1">
+                                <a href="http://s.fotorama.io/1.jpg"><img src="http://s.fotorama.io/1.jpg" alt="" width="90" height="64"></a>
+                                <a href="http://s.fotorama.io/2.jpg"><img src="http://s.fotorama.io/2.jpg" alt="" width="90" height="64"></a>
+                                <a href="http://s.fotorama.io/okonechnikov/1-lo.jpg"><img src="http://s.fotorama.io/okonechnikov/1-lo.jpg" alt="" width="90" height="64"></a>
+                                <a href="http://s.fotorama.io/okonechnikov/10-lo.jpg"><img src="http://s.fotorama.io/okonechnikov/10-lo.jpg" alt="" width="90" height="64"></a>
+                                <a href="http://s.fotorama.io/okonechnikov/1-lo.jpg"><img src="http://s.fotorama.io/okonechnikov/1-lo.jpg" alt="" width="90" height="64"></a>
+                                <a href="http://s.fotorama.io/okonechnikov/10-lo.jpg"><img src="http://s.fotorama.io/okonechnikov/10-lo.jpg" alt="" width="90" height="64"></a>
+                                <a href="http://s.fotorama.io/okonechnikov/12-lo.jpg"><img src="http://s.fotorama.io/okonechnikov/12-lo.jpg" alt="" width="90" height="64"></a>
+                                <a href="http://s.fotorama.io/okonechnikov/16-lo.jpg"><img src="http://s.fotorama.io/okonechnikov/16-lo.jpg" alt="" width="90" height="64"></a>
+                                <a href="http://s.fotorama.io/okonechnikov/12-lo.jpg"><img src="http://s.fotorama.io/okonechnikov/12-lo.jpg" alt="" width="90" height="64"></a>
+                            </div>
+                        </div>
+                        <h4>Агентство пленум так описывает работу</h4>
+                        <blockquote>«Кофе хауз» должен стать для массовой аудитории трендовым местом для перекуса с кофе, помогать сохранять хорошее настроение и силы при перемещении по городу.
+                            <br><br>Новый знак бренда напрямую визуализирует перекус с кофе. В новой цветовой схеме комбинируются два цвета: оранжевый, характерный для категории заведений общественного питания с быстрым обслуживанием, и коричнево-бордовый — цвет кофе.
+                        </blockquote>
+                        <div class="content-block__external-quote">
+                            <div id="vk_post_1_45616"></div>
+                            <script type="text/javascript">
+                                (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//vk.com/js/api/openapi.js?152"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'vk_openapi_js'));
+                                (function() {
+                                    if (!window.VK || !VK.Widgets || !VK.Widgets.Post || !VK.Widgets.Post('vk_post_1_45616', 1, 45616, 'ZsQza9xqpgtNecFWXcf5j6s5fFBo')) setTimeout(arguments.callee, 50);
+                                }());
+                            </script>
                         </div>
                     </div>
-                    <div class="col-big__readers-question readers-question">
-                        <p class="readers-question__title">Вопросы от читателей</p>
-                        <div class="readers-question__container">
-                            <a href="#" class="readers-question__link link-parent">
-                                <img src="../../dev_img/pl_q_1.jpg" alt="" class="readers-question__preview link-preview">
-                                <p class="readers-question__name-wrap">
-                                    <span class="readers-question__name link">Штраф с камеры видео-фиксации пришел с задержкой на полгода. Должен ли я платить!?</span>
-                                </p>
-                            </a>
-                            <p class="readers-question__description">Вам предъявляют бумажку, в которой говорится, что два года назад вы были оштрафованы полицейским экипажем за нарушение, скажем, правил разметки.</p>
-                            <div class="readers-question__bottom">
-                                <a href="#" class="readers-question__ask link">Связаться с редакцией</a>
-                            </div>
+                    <div class="publication__tags-wrap">
+                        <ul class="publication__tags">
+                            <li class="publication__tag"><a href="" class="publication__tag-text">Проишествие</a></li>
+                            <li class="publication__tag"><a href="" class="publication__tag-text">Пожар</a></li>
+                            <li class="publication__tag"><a href="" class="publication__tag-text">Взрыв</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="publication__footer">
+                        <p class="publication__author">Автор — Евгений Петросян <a href="#" class="publication__author-link link">e.petrosyan@diapazon.kz</a></p>
+                        <div class="publication__share-row">
+                            <div class="fb-share-button" data-href="" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Поделиться</a></div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-big__news-box news-box">
+                    <p class="news-box__title">Новости по теме</p>
                     <ul class="news-box__list">
                         <li class="news-box__item news-cart">
                             <a href="#" class="news-cart__link link-parent">
@@ -310,274 +363,6 @@
                         <li class="socials__item"><a href="#" class="socials__link"></a></li>
                     </ul>
                 </div>
-
-                <div class="col-small__photoreport photoreport">
-                    <p class="photoreport__title">Фоторепортажи</p>
-                    <ul class="photoreport__list">
-                        <li class="photoreport__item">
-                            <a href="#" class="photoreport__link link-parent">
-                                <img src="../../dev_img/pl_p_1.jpg" alt="" class="photoreport__preview">
-                                <p class="photoreport__name-wrap">
-                                    <span class="photoreport__name pink-link">Он увидел боль всего мира и смог ее показать</span>
-                                </p>
-                            </a>
-                        </li>
-                        <li class="photoreport__item">
-                            <a href="#" class="photoreport__link link-parent">
-                                <img src="../../dev_img/pl_p_2.jpg" alt="" class="photoreport__preview">
-                                <p class="photoreport__name-wrap">
-                                    <span class="photoreport__name pink-link">Он спасает нищих и проституток в богом заюытом месте</span>
-                                </p>
-                            </a>
-                        </li>
-                        <li class="photoreport__item">
-                            <a href="#" class="photoreport__link link-parent">
-                                <img src="../../dev_img/pl_190x120.jpg" alt="" class="photoreport__preview">
-                                <p class="photoreport__name-wrap">
-                                    <span class="photoreport__name pink-link">Познер, Петросян и Леонтьев одеваются на зависть молодым</span>
-                                </p>
-                            </a>
-                        </li>
-                        <li class="photoreport__item">
-                            <a href="#" class="photoreport__link link-parent">
-                                <img src="../../dev_img/pl_p_4.jpg" alt="" class="photoreport__preview">
-                                <p class="photoreport__name-wrap">
-                                    <span class="photoreport__name pink-link">США жестоко убивали тысяци вьетнамцев</span>
-                                </p>
-                            </a>
-                        </li>
-                        <li class="photoreport__item">
-                            <a href="#" class="photoreport__link link-parent">
-                                <img src="../../dev_img/pl_p_5.jpg" alt="" class="photoreport__preview">
-                                <p class="photoreport__name-wrap">
-                                    <span class="photoreport__name pink-link">Во что превратился курорт на границе с Северной Кореей</span>
-                                </p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="content__container container">
-            <div class="container__videos popular-videos">
-                <div class="popular-videos__top">
-                    <div class="popular-videos__arrow popular-videos__arrow--left"></div>
-                    <p class="popular-videos__title">Популярное видео</p>
-                    <div class="popular-videos__arrow popular-videos__arrow--right"></div>
-                </div>
-                <ul class="popular-videos__list">
-                    <li class="popular-videos__item">
-                        <a href="#" class="popular-videos__link link-parent">
-                            <div class="popular-videos__preview-wrap">
-                                <img src="../../dev_img/pl_220x140.jpg" alt="" class="popular-videos__preview link-preview">
-                                <span class="popular-videos__length">01:28</span>
-                            </div>
-                            <p class="popular-videos__name-wrap">
-                                <span class="popular-videos__name link">Жуткий туман стал причиной страшного ДТП на трассе</span>
-                            </p>
-                        </a>
-                        <div class="popular-videos__meta-row">
-                            <span class="popular-videos__views">254</span>
-                        </div>
-                    </li>
-                    <li class="popular-videos__item">
-                        <a href="#" class="popular-videos__link link-parent">
-                            <div class="popular-videos__preview-wrap">
-                                <img src="../../dev_img/pl_v_2.jpg" alt="" class="popular-videos__preview link-preview">
-                                <span class="popular-videos__length">01:28</span>
-                            </div>
-                            <p class="popular-videos__name-wrap">
-                                <span class="popular-videos__name link">Мужчина погиб, поскользнувшись на заправке</span>
-                            </p>
-                        </a>
-                        <div class="popular-videos__meta-row">
-                            <span class="popular-videos__views">254</span>
-                        </div>
-                    </li>
-                    <li class="popular-videos__item">
-                        <a href="#" class="popular-videos__link link-parent">
-                            <div class="popular-videos__preview-wrap">
-                                <img src="../../dev_img/pl_v_3.jpg" alt="" class="popular-videos__preview link-preview">
-                                <span class="popular-videos__length">01:28</span>
-                            </div>
-                            <p class="popular-videos__name-wrap">
-                                <span class="popular-videos__name link">Дерзкое ограбление борделя сняли на видео</span>
-                            </p>
-                        </a>
-                        <div class="popular-videos__meta-row">
-                            <span class="popular-videos__views">254</span>
-                        </div>
-                    </li>
-                    <li class="popular-videos__item">
-                        <a href="#" class="popular-videos__link link-parent">
-                            <div class="popular-videos__preview-wrap">
-                                <img src="../../dev_img/pl_v_4.jpg" alt="" class="popular-videos__preview link-preview">
-                                <span class="popular-videos__length">01:28</span>
-                            </div>
-                            <p class="popular-videos__name-wrap">
-                                <span class="popular-videos__name link">Появилось видео боя сбитого летчика Су-25 с боевиками в Сирии</span>
-                            </p>
-                        </a>
-                        <div class="popular-videos__meta-row">
-                            <span class="popular-videos__views">254</span>
-                        </div>
-                    </li>
-                    <li class="popular-videos__item">
-                        <a href="#" class="popular-videos__link link-parent">
-                            <div class="popular-videos__preview-wrap">
-                                <img src="../../dev_img/pl_v_5.jpg" alt="" class="popular-videos__preview link-preview">
-                                <span class="popular-videos__length">01:28</span>
-                            </div>
-                            <p class="popular-videos__name-wrap">
-                                <span class="popular-videos__name link">Боксер расплакался на пресс-конференции после поражения от второго Головкина</span>
-                            </p>
-                        </a>
-                        <div class="popular-videos__meta-row">
-                            <span class="popular-videos__views">254</span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="content__container container">
-
-            <div class="container__col-average col-average">
-                <img src="../../dev_img/banner_l.jpg" alt="">
-            </div>
-
-
-            <div class="container__col-big col-big">
-                <div class="col-big__news-box news-box">
-                    <ul class="news-box__list">
-                        <li class="news-box__item news-cart">
-                            <a href="#" class="news-cart__link link-parent">
-                                <img src="../../dev_img/pl_n_1.jpg" alt="" class="news-cart__preview link-preview">
-                                <p class="news-cart__name-wrap">
-                                    <span class="news-cart__name link">Обвиняемый в избиении полицейских бизнесмен заявил, что у него украли 70 млн тенге</span>
-                                </p>
-                            </a>
-                            <div class="news-cart__meta-row">
-                                <span class="news-cart__pub-time">08:25</span>
-                                <a href="#" class="news-cart__comments">54</a>
-                                <span class="news-cart__views">214</span>
-                            </div>
-                        </li>
-                        <li class="news-box__item news-cart">
-                            <a href="#" class="news-cart__link link-parent">
-                                <img src="../../dev_img/pl_n_2.jpg" alt="" class="news-cart__preview link-preview">
-                                <p class="news-cart__name-wrap">
-                                    <span class="news-cart__name link">Мошенницы обманули алматинцев на 1,5 млн долларов</span>
-                                </p>
-                            </a>
-                            <div class="news-cart__meta-row">
-                                <span class="news-cart__pub-time">08:25</span>
-                                <a href="#" class="news-cart__comments">54</a>
-                                <span class="news-cart__views">214</span>
-                            </div>
-                        </li>
-                        <li class="news-box__item news-cart">
-                            <a href="#" class="news-cart__link link-parent">
-                                <img src="../../dev_img/pl_n_3.jpg" alt="" class="news-cart__preview link-preview">
-                                <p class="news-cart__name-wrap">
-                                    <span class="news-cart__name link">Федерация тяжелой атлетики: Илья Ильин сможет громко и красиво вернуться</span>
-                                </p>
-                            </a>
-                            <div class="news-cart__meta-row">
-                                <span class="news-cart__pub-time">08:25</span>
-                                <a href="#" class="news-cart__comments">54</a>
-                                <span class="news-cart__views">214</span>
-                            </div>
-                        </li>
-                        <li class="news-box__item news-cart">
-                            <a href="#" class="news-cart__link link-parent">
-                                <img src="../../dev_img/pl_n_4.jpg" alt="" class="news-cart__preview link-preview">
-                                <p class="news-cart__name-wrap">
-                                    <span class="news-cart__name link">Как изменится "Нур Отан" с приходом Ашимбаева</span>
-                                </p>
-                            </a>
-                            <div class="news-cart__meta-row">
-                                <span class="news-cart__pub-time">08:25</span>
-                                <a href="#" class="news-cart__comments">54</a>
-                                <span class="news-cart__views">214</span>
-                            </div>
-                        </li>
-                        <li class="news-box__item news-cart">
-                            <a href="#" class="news-cart__link link-parent">
-                                <img src="../../dev_img/pl_n_5.jpg" alt="" class="news-cart__preview link-preview">
-                                <p class="news-cart__name-wrap">
-                                    <span class="news-cart__name link">Сапарбаев посоветовал акимам с "ханскими замашками" пасти скот</span>
-                                </p>
-                            </a>
-                            <div class="news-cart__meta-row">
-                                <span class="news-cart__pub-time">08:25</span>
-                                <a href="#" class="news-cart__comments">54</a>
-                                <span class="news-cart__views">214</span>
-                            </div>
-                        </li>
-                        <li class="news-box__item news-cart">
-                            <a href="#" class="news-cart__link link-parent">
-                                <img src="../../dev_img/pl_n_6.jpg" alt="" class="news-cart__preview link-preview">
-                                <p class="news-cart__name-wrap">
-                                    <span class="news-cart__name link">Биткоин опустился ниже 8 тыс. долларов</span>
-                                </p>
-                            </a>
-                            <div class="news-cart__meta-row">
-                                <span class="news-cart__pub-time">08:25</span>
-                                <a href="#" class="news-cart__comments">54</a>
-                                <span class="news-cart__views">214</span>
-                            </div>
-                        </li>
-                        <li class="news-box__item news-cart">
-                            <a href="#" class="news-cart__link link-parent">
-                                <img src="../../dev_img/pl_n_3.jpg" alt="" class="news-cart__preview link-preview">
-                                <p class="news-cart__name-wrap">
-                                    <span class="news-cart__name link">Федерация тяжелой атлетики: Илья Ильин сможет громко и красиво вернуться</span>
-                                </p>
-                            </a>
-                            <div class="news-cart__meta-row">
-                                <span class="news-cart__pub-time">08:25</span>
-                                <a href="#" class="news-cart__comments">54</a>
-                                <span class="news-cart__views">214</span>
-                            </div>
-                        </li>
-                        <li class="news-box__item news-cart">
-                            <a href="#" class="news-cart__link link-parent">
-                                <img src="../../dev_img/pl_n_1.jpg" alt="" class="news-cart__preview link-preview">
-                                <p class="news-cart__name-wrap">
-                                    <span class="news-cart__name link">Обвиняемый в избиении полицейских бизнесмен заявил, что у него украли 70 млн тенге</span>
-                                </p>
-                            </a>
-                            <div class="news-cart__meta-row">
-                                <span class="news-cart__pub-time">08:25</span>
-                                <a href="#" class="news-cart__comments">54</a>
-                                <span class="news-cart__views">214</span>
-                            </div>
-                        </li>
-                        <li class="news-box__item news-cart">
-                            <a href="#" class="news-cart__link link-parent">
-                                <img src="../../dev_img/pl_n_2.jpg" alt="" class="news-cart__preview link-preview">
-                                <p class="news-cart__name-wrap">
-                                    <span class="news-cart__name link">Мошенницы обманули алматинцев на 1,5 млн долларов</span>
-                                </p>
-                            </a>
-                            <div class="news-cart__meta-row">
-                                <span class="news-cart__pub-time">08:25</span>
-                                <a href="#" class="news-cart__comments">54</a>
-                                <span class="news-cart__views">214</span>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="news-box__btn-wrap">
-                        <button class="news-box__btn btn btn--grey btn--big">Загрузить еще</button>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="container__col-small col-small">
-                <img src="../../dev_img/banner_r.jpg" alt="">
             </div>
         </div>
     </main>

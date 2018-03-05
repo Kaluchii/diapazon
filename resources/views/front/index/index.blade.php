@@ -153,7 +153,7 @@
                     </div>
                 </div>
 
-                <div class="col-big__news-box news-box">
+                <div class="col-big__news-box news-box news-box--together">
                     <ul class="news-box__list">
                         <li class="news-box__item news-cart">
                             <a href="#" class="news-cart__link link-parent">
@@ -397,7 +397,9 @@
         <div class="content__container container">
 
             <div class="container__col-average col-average">
-                <img src="/dev_img/banner_l.jpg" alt="">
+                <div class="col-average__banner banner">
+                    <img src="/dev_img/banner_l.jpg" alt="">
+                </div>
             </div>
 
 
@@ -530,7 +532,9 @@
 
 
             <div class="container__col-small col-small">
-                <img src="/dev_img/banner_r.jpg" alt="">
+                <div class="col-small__banner banner">
+                    <img src="/dev_img/banner_r.jpg" alt="">
+                </div>
             </div>
         </div>
     </main>
