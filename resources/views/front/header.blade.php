@@ -1,7 +1,7 @@
 @section('header')
     <header class="header">
         <div class="header__top">
-            <div class="header__container">
+            <div class="header__top-container">
                 <div class="header__logo-tag-wrap">
                     <a href="#" class="header__link-main">
                         <img src="/dev_img/logo.jpg" alt="" class="header__logo">
@@ -15,18 +15,18 @@
             </div>
         </div>
         <div class="header__nav-wrap">
-            <nav class="header__container">
+            <nav class="header__nav-container">
                 <ul class="header__navigation-list">
-                    <li class="header__navigation-item"><a href="#" class="header__nav-link pink-link">Экономика</a></li>
-                    <li class="header__navigation-item"><a href="#" class="header__nav-link pink-link">Проишествия</a></li>
-                    <li class="header__navigation-item"><a href="#" class="header__nav-link pink-link">Спорт</a></li>
-                    <li class="header__navigation-item"><a href="#" class="header__nav-link pink-link">Жизнь</a></li>
-                    <li class="header__navigation-item"><a href="#" class="header__nav-link pink-link">Здоровье</a></li>
-                    <li class="header__navigation-item"><a href="#" class="header__nav-link pink-link">Культура</a></li>
-                    <li class="header__navigation-item"><a href="#" class="header__nav-link pink-link">Афиша</a></li>
-                    <li class="header__navigation-item"><a href="#" class="header__nav-link pink-link">Люди</a></li>
-                    <li class="header__navigation-item"><a href="#" class="header__nav-link pink-link">Фото</a></li>
-                    <li class="header__navigation-item"><a href="#" class="header__nav-link pink-link">Видео</a></li>
+                    <li class="header__navigation-item"><a href="#" class="header__nav-link">Экономика</a></li>
+                    <li class="header__navigation-item"><a href="#" class="header__nav-link">Проишествия</a></li>
+                    <li class="header__navigation-item"><a href="#" class="header__nav-link">Спорт</a></li>
+                    <li class="header__navigation-item"><a href="#" class="header__nav-link">Жизнь</a></li>
+                    <li class="header__navigation-item"><a href="#" class="header__nav-link">Здоровье</a></li>
+                    <li class="header__navigation-item"><a href="#" class="header__nav-link">Культура</a></li>
+                    <li class="header__navigation-item"><a href="#" class="header__nav-link">Афиша</a></li>
+                    <li class="header__navigation-item"><a href="#" class="header__nav-link">Люди</a></li>
+                    <li class="header__navigation-item"><a href="#" class="header__nav-link">Фото</a></li>
+                    <li class="header__navigation-item"><a href="#" class="header__nav-link">Видео</a></li>
                 </ul>
                 <div class="header__menu-actions">
                     <a href="#" class="header__menu-action pink-link">Задать вопрос</a>

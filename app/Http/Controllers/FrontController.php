@@ -33,4 +33,9 @@ class FrontController extends Controller
         return view('front.publication.publication', [
         ]);
     }
+
+    public function getPublications(){
+        return view('front.publications.publications', [
+        ]);
+    }
 }

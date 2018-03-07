@@ -327,7 +327,7 @@
                                 <span class="popular-videos__length">01:28</span>
                             </div>
                             <p class="popular-videos__name-wrap">
-                                <span class="popular-videos__name link">Жуткий туман стал причиной страшного ДТП на трассе</span>
+                                <span class="popular-videos__name pink-link">Жуткий туман стал причиной страшного ДТП на трассе</span>
                             </p>
                         </a>
                         <div class="popular-videos__meta-row">
@@ -341,7 +341,7 @@
                                 <span class="popular-videos__length">01:28</span>
                             </div>
                             <p class="popular-videos__name-wrap">
-                                <span class="popular-videos__name link">Мужчина погиб, поскользнувшись на заправке</span>
+                                <span class="popular-videos__name pink-link">Мужчина погиб, поскользнувшись на заправке</span>
                             </p>
                         </a>
                         <div class="popular-videos__meta-row">
@@ -355,7 +355,7 @@
                                 <span class="popular-videos__length">01:28</span>
                             </div>
                             <p class="popular-videos__name-wrap">
-                                <span class="popular-videos__name link">Дерзкое ограбление борделя сняли на видео</span>
+                                <span class="popular-videos__name pink-link">Дерзкое ограбление борделя сняли на видео</span>
                             </p>
                         </a>
                         <div class="popular-videos__meta-row">
@@ -369,7 +369,7 @@
                                 <span class="popular-videos__length">01:28</span>
                             </div>
                             <p class="popular-videos__name-wrap">
-                                <span class="popular-videos__name link">Появилось видео боя сбитого летчика Су-25 с боевиками в Сирии</span>
+                                <span class="popular-videos__name pink-link">Появилось видео боя сбитого летчика Су-25 с боевиками в Сирии</span>
                             </p>
                         </a>
                         <div class="popular-videos__meta-row">
@@ -383,7 +383,7 @@
                                 <span class="popular-videos__length">01:28</span>
                             </div>
                             <p class="popular-videos__name-wrap">
-                                <span class="popular-videos__name link">Боксер расплакался на пресс-конференции после поражения от второго Головкина</span>
+                                <span class="popular-videos__name pink-link">Боксер расплакался на пресс-конференции после поражения от второго Головкина</span>
                             </p>
                         </a>
                         <div class="popular-videos__meta-row">
