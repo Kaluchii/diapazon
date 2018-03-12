@@ -1,7 +1,7 @@
 @extends('front.layout')
 @section('content')
 
-    <main class="content">{{-- /////////////////// --}}
+    <main class="content">
         <div class="content__main-topics main-topics">
             <div class="main-topics__container">
                 <p class="main-topics__title">Главные темы</p>
@@ -161,7 +161,8 @@
                         <h2>Ребрендинг «Кофе хауза»</h2>
                         <p>Сеть кофеен «Кофе хауз» представила новый фирменный стиль и концепцию заведений. Ребрендинг будет проведён в 2018 году. В новых заведениях не будет официантов, а позиционировать «Кофе хауз» его владелец собирается как сеть кофеен быстрого обслуживания.</p>
                         <div class="content-block__gallery">
-                            <div class="fotorama" data-nav="thumbs" data-navwidth="78.9473685%" data-thumbmargin="10" data-thumbborderwidth="1">
+                            <div class="fotorama" data-nav="thumbs" data-navwidth="78.9473685%" data-thumbmargin="10"
+                                 data-thumbborderwidth="1" data-width="760" data-maxwidth="100%">
                                 <a href="http://s.fotorama.io/1.jpg"><img src="http://s.fotorama.io/1.jpg" alt="" width="90" height="64"></a>
                                 <a href="http://s.fotorama.io/2.jpg"><img src="http://s.fotorama.io/2.jpg" alt="" width="90" height="64"></a>
                                 <a href="http://s.fotorama.io/okonechnikov/1-lo.jpg"><img src="http://s.fotorama.io/okonechnikov/1-lo.jpg" alt="" width="90" height="64"></a>
@@ -310,10 +311,11 @@
                 <div class="col-small__socials socials">
                     <p class="socials__title">Следите за новостями</p>
                     <ul class="socials__list">
-                        <li class="socials__item"><a href="#" class="socials__link"></a></li>
-                        <li class="socials__item"><a href="#" class="socials__link"></a></li>
-                        <li class="socials__item"><a href="#" class="socials__link"></a></li>
-                        <li class="socials__item"><a href="#" class="socials__link"></a></li>
+                        <li class="socials__item"><a href="#" class="socials__link socials__link--vk"></a></li>
+                        <li class="socials__item"><a href="#" class="socials__link socials__link--ok"></a></li>
+                        <li class="socials__item"><a href="#" class="socials__link socials__link--fb"></a></li>
+                        <li class="socials__item"><a href="#" class="socials__link socials__link--tw"></a></li>
+                        <li class="socials__item"><a href="#" class="socials__link socials__link--inst"></a></li>
                     </ul>
                 </div>
             </div>

@@ -358,10 +358,11 @@
                 <div class="col-small__socials socials">
                     <p class="socials__title">Следите за новостями</p>
                     <ul class="socials__list">
-                        <li class="socials__item"><a href="#" class="socials__link"></a></li>
-                        <li class="socials__item"><a href="#" class="socials__link"></a></li>
-                        <li class="socials__item"><a href="#" class="socials__link"></a></li>
-                        <li class="socials__item"><a href="#" class="socials__link"></a></li>
+                        <li class="socials__item"><a href="#" class="socials__link socials__link--vk"></a></li>
+                        <li class="socials__item"><a href="#" class="socials__link socials__link--ok"></a></li>
+                        <li class="socials__item"><a href="#" class="socials__link socials__link--fb"></a></li>
+                        <li class="socials__item"><a href="#" class="socials__link socials__link--tw"></a></li>
+                        <li class="socials__item"><a href="#" class="socials__link socials__link--inst"></a></li>
                     </ul>
                 </div>
 

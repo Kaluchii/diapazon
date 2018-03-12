@@ -221,7 +221,8 @@
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   opacity: 0;
-  border: none !important; }
+  border: none !important;
+}
   .fotorama__loaded .fotorama__img, .fotorama__error .fotorama__img {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100);
@@ -260,7 +261,12 @@
 
 .fotorama__nav__frame {
   position: relative;
-  cursor: pointer; }
+  cursor: pointer;
+
+  .fotorama__img{
+    left: 0 !important;
+  }
+}
 
 .fotorama__nav--dots {
   display: block; }

@@ -1,7 +1,7 @@
 @extends('front.layout')
 @section('content')
 
-    <main class="content">{{-- /////////////////// --}}
+    <main class="content">
         <div class="content__main-topics main-topics">
             <div class="main-topics__container">
                 <p class="main-topics__title">Главные темы</p>
@@ -136,18 +136,17 @@
                             <span class="news-cart__views news-cart__views--big">214</span>
                         </div>
                     </div>
-                    <div class="col-big__readers-question readers-question">
-                        <p class="readers-question__title">Вопросы от читателей</p>
-                        <div class="readers-question__container">
-                            <a href="#" class="readers-question__link link-parent">
-                                <img src="/dev_img/pl_q_1.jpg" alt="" class="readers-question__preview link-preview">
-                                <p class="readers-question__name-wrap">
-                                    <span class="readers-question__name link">Штраф с камеры видео-фиксации пришел с задержкой на полгода. Должен ли я платить!?</span>
+                    <div class="col-big__spec-news spec-news">
+                        <div class="spec-news__container">
+                            <a href="#" class="spec-news__link link-parent">
+                                <img src="/dev_img/pl_q_1.jpg" alt="" class="spec-news__preview link-preview">
+                                <p class="spec-news__name-wrap">
+                                    <span class="spec-news__name link">Штраф с камеры видео-фиксации пришел с задержкой на полгода. Должен ли я платить!?</span>
                                 </p>
                             </a>
-                            <p class="readers-question__description">Вам предъявляют бумажку, в которой говорится, что два года назад вы были оштрафованы полицейским экипажем за нарушение, скажем, правил разметки.</p>
-                            <div class="readers-question__bottom">
-                                <a href="#" class="readers-question__ask link">Связаться с редакцией</a>
+                            <p class="spec-news__description">Вам предъявляют бумажку, в которой говорится, что два года назад вы были оштрафованы полицейским экипажем за нарушение, скажем, правил разметки.</p>
+                            <div class="spec-news__bottom">
+                                <a href="#" class="spec-news__ask link">Связаться с редакцией</a>
                             </div>
                         </div>
                     </div>
@@ -257,10 +256,11 @@
                 <div class="col-small__socials socials">
                     <p class="socials__title">Следите за новостями</p>
                     <ul class="socials__list">
-                        <li class="socials__item"><a href="#" class="socials__link"></a></li>
-                        <li class="socials__item"><a href="#" class="socials__link"></a></li>
-                        <li class="socials__item"><a href="#" class="socials__link"></a></li>
-                        <li class="socials__item"><a href="#" class="socials__link"></a></li>
+                        <li class="socials__item"><a href="#" class="socials__link socials__link--vk"></a></li>
+                        <li class="socials__item"><a href="#" class="socials__link socials__link--ok"></a></li>
+                        <li class="socials__item"><a href="#" class="socials__link socials__link--fb"></a></li>
+                        <li class="socials__item"><a href="#" class="socials__link socials__link--tw"></a></li>
+                        <li class="socials__item"><a href="#" class="socials__link socials__link--inst"></a></li>
                     </ul>
                 </div>
 
