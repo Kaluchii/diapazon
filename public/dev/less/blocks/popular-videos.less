@@ -1,13 +1,14 @@
 .popular-videos{
   width: 100%;
   margin-top: 10px;
-  padding: 0 20px 15px;
-  background-color: #003399;
+  padding: 0 18px 15px;
+  background-color: #0B5081;
 
   &__top{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 2px;
   }
 
   &__arrow{
@@ -41,16 +42,24 @@
     text-align: center;
   }
 
-  &__list{
-    display: flex;
+  &__wrap{
     margin-top: 10px;
+    overflow: hidden;
   }
 
+  &__list{
+    display: flex;
+    padding: 2px;
+  }
+
+  &__item-wrap{}
+
   &__item{
-    max-width: 220px;
+    width: 18.0327868%;
+    flex-shrink: 0;
 
     &:nth-child(n+2){
-      margin-left: 30px;
+      margin-left: 2.4590163%;
     }
   }
 
@@ -58,6 +67,7 @@
 
   &__preview-wrap{
     position: relative;
+    max-width: 220px;
 
     &::after{
       content: '';
@@ -110,6 +120,29 @@
       width: 18px;
       height: 13px;
       background: url("/img/views.png") no-repeat center;
+    }
+  }
+}
+
+.slick-initialized{
+  &.popular-videos{
+    &__list{
+      display: block;
+      padding: 0;
+    }
+  }
+
+  .popular-videos{
+    &__item{
+      width: 20.4918032%;
+
+      &:nth-child(n+2){
+        margin-left: 0;
+      }
+    }
+
+    &__item-wrap{
+      margin: 0 0 0 10.90909%;
     }
   }
 }

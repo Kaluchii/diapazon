@@ -315,82 +315,302 @@
         <div class="content__container container">
             <div class="container__videos popular-videos">
                 <div class="popular-videos__top">
-                    <div class="popular-videos__arrow popular-videos__arrow--left"></div>
+                    <div class="popular-videos__arrow popular-videos__arrow--left js_previous_set"></div>
                     <p class="popular-videos__title">Популярное видео</p>
-                    <div class="popular-videos__arrow popular-videos__arrow--right"></div>
+                    <div class="popular-videos__arrow popular-videos__arrow--right js_next_set"></div>
                 </div>
-                <ul class="popular-videos__list">
-                    <li class="popular-videos__item">
-                        <a href="#" class="popular-videos__link link-parent">
-                            <div class="popular-videos__preview-wrap">
-                                <img src="/dev_img/pl_220x140.jpg" alt="" class="popular-videos__preview link-preview">
-                                <span class="popular-videos__length">01:28</span>
+                <div class="popular-videos__wrap">
+                    <div class="popular-videos__list js_videos">
+                        <div class="popular-videos__item">
+                            <div class="popular-videos__item-wrap">
+                                <a href="#" class="popular-videos__link link-parent">
+                                    <div class="popular-videos__preview-wrap">
+                                        <img src="/dev_img/pl_220x140.jpg" alt="" class="popular-videos__preview link-preview">
+                                        <span class="popular-videos__length">01:28</span>
+                                    </div>
+                                    <p class="popular-videos__name-wrap">
+                                        <span class="popular-videos__name pink-link">Жуткий туман стал причиной страшного ДТП на трассе</span>
+                                    </p>
+                                </a>
+                                <div class="popular-videos__meta-row">
+                                    <span class="popular-videos__views">254</span>
+                                </div>
                             </div>
-                            <p class="popular-videos__name-wrap">
-                                <span class="popular-videos__name pink-link">Жуткий туман стал причиной страшного ДТП на трассе</span>
-                            </p>
-                        </a>
-                        <div class="popular-videos__meta-row">
-                            <span class="popular-videos__views">254</span>
                         </div>
-                    </li>
-                    <li class="popular-videos__item">
-                        <a href="#" class="popular-videos__link link-parent">
-                            <div class="popular-videos__preview-wrap">
-                                <img src="/dev_img/pl_v_2.jpg" alt="" class="popular-videos__preview link-preview">
-                                <span class="popular-videos__length">01:28</span>
+                        <div class="popular-videos__item">
+                            <div class="popular-videos__item-wrap">
+                                <a href="#" class="popular-videos__link link-parent">
+                                    <div class="popular-videos__preview-wrap">
+                                        <img src="/dev_img/pl_v_2.jpg" alt="" class="popular-videos__preview link-preview">
+                                        <span class="popular-videos__length">01:28</span>
+                                    </div>
+                                    <p class="popular-videos__name-wrap">
+                                        <span class="popular-videos__name pink-link">Мужчина погиб, поскользнувшись на заправке</span>
+                                    </p>
+                                </a>
+                                <div class="popular-videos__meta-row">
+                                    <span class="popular-videos__views">254</span>
+                                </div>
                             </div>
-                            <p class="popular-videos__name-wrap">
-                                <span class="popular-videos__name pink-link">Мужчина погиб, поскользнувшись на заправке</span>
-                            </p>
-                        </a>
-                        <div class="popular-videos__meta-row">
-                            <span class="popular-videos__views">254</span>
                         </div>
-                    </li>
-                    <li class="popular-videos__item">
-                        <a href="#" class="popular-videos__link link-parent">
-                            <div class="popular-videos__preview-wrap">
-                                <img src="/dev_img/pl_v_3.jpg" alt="" class="popular-videos__preview link-preview">
-                                <span class="popular-videos__length">01:28</span>
+                        <div class="popular-videos__item">
+                            <div class="popular-videos__item-wrap">
+                                <a href="#" class="popular-videos__link link-parent">
+                                    <div class="popular-videos__preview-wrap">
+                                        <img src="/dev_img/pl_v_3.jpg" alt="" class="popular-videos__preview link-preview">
+                                        <span class="popular-videos__length">01:28</span>
+                                    </div>
+                                    <p class="popular-videos__name-wrap">
+                                        <span class="popular-videos__name pink-link">Дерзкое ограбление борделя сняли на видео</span>
+                                    </p>
+                                </a>
+                                <div class="popular-videos__meta-row">
+                                    <span class="popular-videos__views">254</span>
+                                </div>
                             </div>
-                            <p class="popular-videos__name-wrap">
-                                <span class="popular-videos__name pink-link">Дерзкое ограбление борделя сняли на видео</span>
-                            </p>
-                        </a>
-                        <div class="popular-videos__meta-row">
-                            <span class="popular-videos__views">254</span>
                         </div>
-                    </li>
-                    <li class="popular-videos__item">
-                        <a href="#" class="popular-videos__link link-parent">
-                            <div class="popular-videos__preview-wrap">
-                                <img src="/dev_img/pl_v_4.jpg" alt="" class="popular-videos__preview link-preview">
-                                <span class="popular-videos__length">01:28</span>
+                        <div class="popular-videos__item">
+                            <div class="popular-videos__item-wrap">
+                                <a href="#" class="popular-videos__link link-parent">
+                                    <div class="popular-videos__preview-wrap">
+                                        <img src="/dev_img/pl_v_4.jpg" alt="" class="popular-videos__preview link-preview">
+                                        <span class="popular-videos__length">01:28</span>
+                                    </div>
+                                    <p class="popular-videos__name-wrap">
+                                        <span class="popular-videos__name pink-link">Появилось видео боя сбитого летчика Су-25 с боевиками в Сирии</span>
+                                    </p>
+                                </a>
+                                <div class="popular-videos__meta-row">
+                                    <span class="popular-videos__views">254</span>
+                                </div>
                             </div>
-                            <p class="popular-videos__name-wrap">
-                                <span class="popular-videos__name pink-link">Появилось видео боя сбитого летчика Су-25 с боевиками в Сирии</span>
-                            </p>
-                        </a>
-                        <div class="popular-videos__meta-row">
-                            <span class="popular-videos__views">254</span>
                         </div>
-                    </li>
-                    <li class="popular-videos__item">
-                        <a href="#" class="popular-videos__link link-parent">
-                            <div class="popular-videos__preview-wrap">
-                                <img src="/dev_img/pl_v_5.jpg" alt="" class="popular-videos__preview link-preview">
-                                <span class="popular-videos__length">01:28</span>
+                        <div class="popular-videos__item">
+                            <div class="popular-videos__item-wrap">
+                                <a href="#" class="popular-videos__link link-parent">
+                                    <div class="popular-videos__preview-wrap">
+                                        <img src="/dev_img/pl_v_5.jpg" alt="" class="popular-videos__preview link-preview">
+                                        <span class="popular-videos__length">01:28</span>
+                                    </div>
+                                    <p class="popular-videos__name-wrap">
+                                        <span class="popular-videos__name pink-link">Боксер расплакался на пресс-конференции после поражения от второго Головкина</span>
+                                    </p>
+                                </a>
+                                <div class="popular-videos__meta-row">
+                                    <span class="popular-videos__views">254</span>
+                                </div>
                             </div>
-                            <p class="popular-videos__name-wrap">
-                                <span class="popular-videos__name pink-link">Боксер расплакался на пресс-конференции после поражения от второго Головкина</span>
-                            </p>
-                        </a>
-                        <div class="popular-videos__meta-row">
-                            <span class="popular-videos__views">254</span>
                         </div>
-                    </li>
-                </ul>
+                        <div class="popular-videos__item">
+                            <div class="popular-videos__item-wrap">
+                                <a href="#" class="popular-videos__link link-parent">
+                                    <div class="popular-videos__preview-wrap">
+                                        <img src="/dev_img/pl_220x140.jpg" alt="" class="popular-videos__preview link-preview">
+                                        <span class="popular-videos__length">01:28</span>
+                                    </div>
+                                    <p class="popular-videos__name-wrap">
+                                        <span class="popular-videos__name pink-link">Жуткий туман стал причиной страшного ДТП на трассе</span>
+                                    </p>
+                                </a>
+                                <div class="popular-videos__meta-row">
+                                    <span class="popular-videos__views">254</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-videos__item">
+                            <div class="popular-videos__item-wrap">
+                                <a href="#" class="popular-videos__link link-parent">
+                                    <div class="popular-videos__preview-wrap">
+                                        <img src="/dev_img/pl_v_2.jpg" alt="" class="popular-videos__preview link-preview">
+                                        <span class="popular-videos__length">01:28</span>
+                                    </div>
+                                    <p class="popular-videos__name-wrap">
+                                        <span class="popular-videos__name pink-link">Мужчина погиб, поскользнувшись на заправке</span>
+                                    </p>
+                                </a>
+                                <div class="popular-videos__meta-row">
+                                    <span class="popular-videos__views">254</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-videos__item">
+                            <div class="popular-videos__item-wrap">
+                                <a href="#" class="popular-videos__link link-parent">
+                                    <div class="popular-videos__preview-wrap">
+                                        <img src="/dev_img/pl_v_3.jpg" alt="" class="popular-videos__preview link-preview">
+                                        <span class="popular-videos__length">01:28</span>
+                                    </div>
+                                    <p class="popular-videos__name-wrap">
+                                        <span class="popular-videos__name pink-link">Дерзкое ограбление борделя сняли на видео</span>
+                                    </p>
+                                </a>
+                                <div class="popular-videos__meta-row">
+                                    <span class="popular-videos__views">254</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-videos__item">
+                            <div class="popular-videos__item-wrap">
+                                <a href="#" class="popular-videos__link link-parent">
+                                    <div class="popular-videos__preview-wrap">
+                                        <img src="/dev_img/pl_v_4.jpg" alt="" class="popular-videos__preview link-preview">
+                                        <span class="popular-videos__length">01:28</span>
+                                    </div>
+                                    <p class="popular-videos__name-wrap">
+                                        <span class="popular-videos__name pink-link">Появилось видео боя сбитого летчика Су-25 с боевиками в Сирии</span>
+                                    </p>
+                                </a>
+                                <div class="popular-videos__meta-row">
+                                    <span class="popular-videos__views">254</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-videos__item">
+                            <div class="popular-videos__item-wrap">
+                                <a href="#" class="popular-videos__link link-parent">
+                                    <div class="popular-videos__preview-wrap">
+                                        <img src="/dev_img/pl_v_5.jpg" alt="" class="popular-videos__preview link-preview">
+                                        <span class="popular-videos__length">01:28</span>
+                                    </div>
+                                    <p class="popular-videos__name-wrap">
+                                        <span class="popular-videos__name pink-link">Боксер расплакался на пресс-конференции после поражения от второго Головкина</span>
+                                    </p>
+                                </a>
+                                <div class="popular-videos__meta-row">
+                                    <span class="popular-videos__views">254</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-videos__item">
+                            <div class="popular-videos__item-wrap">
+                                <a href="#" class="popular-videos__link link-parent">
+                                    <div class="popular-videos__preview-wrap">
+                                        <img src="/dev_img/pl_220x140.jpg" alt="" class="popular-videos__preview link-preview">
+                                        <span class="popular-videos__length">01:28</span>
+                                    </div>
+                                    <p class="popular-videos__name-wrap">
+                                        <span class="popular-videos__name pink-link">Жуткий туман стал причиной страшного ДТП на трассе</span>
+                                    </p>
+                                </a>
+                                <div class="popular-videos__meta-row">
+                                    <span class="popular-videos__views">254</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-videos__item">
+                            <div class="popular-videos__item-wrap">
+                                <a href="#" class="popular-videos__link link-parent">
+                                    <div class="popular-videos__preview-wrap">
+                                        <img src="/dev_img/pl_v_2.jpg" alt="" class="popular-videos__preview link-preview">
+                                        <span class="popular-videos__length">01:28</span>
+                                    </div>
+                                    <p class="popular-videos__name-wrap">
+                                        <span class="popular-videos__name pink-link">Мужчина погиб, поскользнувшись на заправке</span>
+                                    </p>
+                                </a>
+                                <div class="popular-videos__meta-row">
+                                    <span class="popular-videos__views">254</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-videos__item">
+                            <div class="popular-videos__item-wrap">
+                                <a href="#" class="popular-videos__link link-parent">
+                                    <div class="popular-videos__preview-wrap">
+                                        <img src="/dev_img/pl_v_3.jpg" alt="" class="popular-videos__preview link-preview">
+                                        <span class="popular-videos__length">01:28</span>
+                                    </div>
+                                    <p class="popular-videos__name-wrap">
+                                        <span class="popular-videos__name pink-link">Дерзкое ограбление борделя сняли на видео</span>
+                                    </p>
+                                </a>
+                                <div class="popular-videos__meta-row">
+                                    <span class="popular-videos__views">254</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-videos__item">
+                            <div class="popular-videos__item-wrap">
+                                <a href="#" class="popular-videos__link link-parent">
+                                    <div class="popular-videos__preview-wrap">
+                                        <img src="/dev_img/pl_v_4.jpg" alt="" class="popular-videos__preview link-preview">
+                                        <span class="popular-videos__length">01:28</span>
+                                    </div>
+                                    <p class="popular-videos__name-wrap">
+                                        <span class="popular-videos__name pink-link">Появилось видео боя сбитого летчика Су-25 с боевиками в Сирии</span>
+                                    </p>
+                                </a>
+                                <div class="popular-videos__meta-row">
+                                    <span class="popular-videos__views">254</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-videos__item">
+                            <div class="popular-videos__item-wrap">
+                                <a href="#" class="popular-videos__link link-parent">
+                                    <div class="popular-videos__preview-wrap">
+                                        <img src="/dev_img/pl_v_5.jpg" alt="" class="popular-videos__preview link-preview">
+                                        <span class="popular-videos__length">01:28</span>
+                                    </div>
+                                    <p class="popular-videos__name-wrap">
+                                        <span class="popular-videos__name pink-link">Боксер расплакался на пресс-конференции после поражения от второго Головкина</span>
+                                    </p>
+                                </a>
+                                <div class="popular-videos__meta-row">
+                                    <span class="popular-videos__views">254</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-videos__item">
+                            <div class="popular-videos__item-wrap">
+                                <a href="#" class="popular-videos__link link-parent">
+                                    <div class="popular-videos__preview-wrap">
+                                        <img src="/dev_img/pl_220x140.jpg" alt="" class="popular-videos__preview link-preview">
+                                        <span class="popular-videos__length">01:28</span>
+                                    </div>
+                                    <p class="popular-videos__name-wrap">
+                                        <span class="popular-videos__name pink-link">Жуткий туман стал причиной страшного ДТП на трассе</span>
+                                    </p>
+                                </a>
+                                <div class="popular-videos__meta-row">
+                                    <span class="popular-videos__views">254</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-videos__item">
+                            <div class="popular-videos__item-wrap">
+                                <a href="#" class="popular-videos__link link-parent">
+                                    <div class="popular-videos__preview-wrap">
+                                        <img src="/dev_img/pl_v_2.jpg" alt="" class="popular-videos__preview link-preview">
+                                        <span class="popular-videos__length">01:28</span>
+                                    </div>
+                                    <p class="popular-videos__name-wrap">
+                                        <span class="popular-videos__name pink-link">Мужчина погиб, поскользнувшись на заправке</span>
+                                    </p>
+                                </a>
+                                <div class="popular-videos__meta-row">
+                                    <span class="popular-videos__views">254</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-videos__item">
+                            <div class="popular-videos__item-wrap">
+                                <a href="#" class="popular-videos__link link-parent">
+                                    <div class="popular-videos__preview-wrap">
+                                        <img src="/dev_img/pl_v_3.jpg" alt="" class="popular-videos__preview link-preview">
+                                        <span class="popular-videos__length">01:28</span>
+                                    </div>
+                                    <p class="popular-videos__name-wrap">
+                                        <span class="popular-videos__name pink-link">Дерзкое ограбление борделя сняли на видео</span>
+                                    </p>
+                                </a>
+                                <div class="popular-videos__meta-row">
+                                    <span class="popular-videos__views">254</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
