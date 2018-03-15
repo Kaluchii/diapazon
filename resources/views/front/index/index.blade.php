@@ -315,7 +315,7 @@
         <div class="content__container container">
             <div class="container__videos popular-videos">
                 <div class="popular-videos__top">
-                    <div class="popular-videos__arrow popular-videos__arrow--left js_previous_set"></div>
+                    <div class="popular-videos__arrow popular-videos__arrow--left popular-videos__arrow--unactive js_previous_set"></div>
                     <p class="popular-videos__title">Популярное видео</p>
                     <div class="popular-videos__arrow popular-videos__arrow--right js_next_set"></div>
                 </div>
