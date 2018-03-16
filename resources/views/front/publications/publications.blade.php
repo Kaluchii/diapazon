@@ -343,6 +343,7 @@
                 <div class="col-small__situation-info situation-info">
                     <div class="situation-info__search-wrap">
                         <input type="text" class="situation-info__search" placeholder="Поиск по сайту">
+                        <button class="situation-info__search-btn"></button>
                     </div>
                     <div class="situation-info__rows">
                         <p class="situation-info__row">Пятница, 29 декабря, 16:12</p>

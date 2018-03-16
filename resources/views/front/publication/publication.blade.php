@@ -126,11 +126,11 @@
                 <div class="col-big__publication publication">
                     <div class="publication__header">
                         <p class="publication__breadcrumbs breadcrumbs">
-                            <span class="breadcrumbs__level"><a href="#" class="breadcrumbs__link grey-link">Главная</a></span>
+                            <span class="breadcrumbs__level"><a href="#" class="breadcrumbs__link link">Главная</a></span>
                             <span class="breadcrumbs__delimiter"> — </span>
-                            <span class="breadcrumbs__level"><a href="#" class="breadcrumbs__link grey-link">Проишествия</a></span>
+                            <span class="breadcrumbs__level"><a href="#" class="breadcrumbs__link link">Проишествия</a></span>
                             <span class="breadcrumbs__delimiter"> — </span>
-                            <span class="breadcrumbs__level"><a href="#" class="breadcrumbs__link grey-link">В мире</a></span>
+                            <span class="breadcrumbs__level"><a href="#" class="breadcrumbs__link link">В мире</a></span>
                         </p>
                         <p class="publication__info">25 января 08:25<span class="publication__info-delimiter"> • </span>254 просмотра</p>
                     </div>
@@ -296,6 +296,7 @@
                 <div class="col-small__situation-info situation-info">
                     <div class="situation-info__search-wrap">
                         <input type="text" class="situation-info__search" placeholder="Поиск по сайту">
+                        <button class="situation-info__search-btn"></button>
                     </div>
                     <div class="situation-info__rows">
                         <p class="situation-info__row">Пятница, 29 декабря, 16:12</p>

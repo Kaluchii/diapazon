@@ -3,7 +3,10 @@
   padding: 10px;
   background-color: #ffffff;
 
-  &__search-wrap{}
+  &__search-wrap{
+    position: relative;
+    display: block;
+  }
 
   &__search{
     width: 100%;
@@ -18,6 +21,23 @@
 
     &:focus{
       background-color: #ffffff;
+    }
+  }
+
+  &__search-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    background: url("/img/magnifier.svg") no-repeat center / 15px 15px, #e0e0e0;
+    cursor: pointer;
+
+    &:hover{
+      background: url("/img/magnifier.svg") no-repeat center / 15px 15px, #c7c7c7;
     }
   }
 
