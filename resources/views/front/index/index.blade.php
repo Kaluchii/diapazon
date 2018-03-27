@@ -5,13 +5,21 @@
         <div class="content__main-topics main-topics">
             <div class="main-topics__container">
                 <p class="main-topics__title">Главные темы</p>
-                <ul class="main-topics__list">
-                    <li class="main-topics__item"><a href="#" class="main-topics__link link">Подорожание бензина</a></li>
-                    <li class="main-topics__item"><a href="#" class="main-topics__link link">Переход на латиницу</a></li>
-                    <li class="main-topics__item"><a href="#" class="main-topics__link link">Забастовка шахтеров</a></li>
-                    <li class="main-topics__item"><a href="#" class="main-topics__link link">Суд над Винокуровым</a></li>
-                    <li class="main-topics__item"><a href="#" class="main-topics__link link">Новый год в РК</a></li>
-                </ul>
+                <div class="main-topics__list js_podkat_source">
+                    <a href="#" class="main-topics__item link-parent"><span class="main-topics__link link">Подорожание бензина</span></a>
+                    <a href="#" class="main-topics__item link-parent"><span class="main-topics__link link">Переход на латиницу</span></a>
+                    <a href="#" class="main-topics__item link-parent"><span class="main-topics__link link">Забастовка шахтеров</span></a>
+                    <a href="#" class="main-topics__item link-parent"><span class="main-topics__link link">Суд над Винокуровым</span></a>
+                    <a href="#" class="main-topics__item link-parent"><span class="main-topics__link link">Новый год в РК</span></a>
+                </div>
+                <div class="main-topics__other-items link-parent js_podkat_roll">
+                    <span class="main-topics__link link js_podkat_toggle">Еще</span>
+                    <span class="main-topics__podkat-roll">
+                        <span class="main-topics__podkat-roll-list js_podkat_roll">
+                            <a href="" class="main-topics__podkat-roll-item"></a>
+                        </span>
+                    </span>
+                </div>
             </div>
         </div>
 
