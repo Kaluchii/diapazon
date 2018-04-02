@@ -1,0 +1,144 @@
+.popular-videos{
+  width: 100%;
+  margin-top: 10px;
+  padding: 0 18px 15px;
+  background-color: #333333;
+
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2px;
+  }
+
+  &__arrow{
+    width: 50px;
+    height: 50px;
+    background: url('/img/videos_arrow.png') no-repeat center, #000000;
+    opacity: .4;
+    cursor: pointer;
+
+    &--left{
+      transform: rotate(180deg);
+    }
+
+    &--right{}
+
+    &--unactive{
+      opacity: 0 !important;
+      pointer-events: none;
+    }
+  }
+
+  &__title{
+    flex-grow: 1;
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  &__wrap{
+    margin-top: 10px;
+    overflow: hidden;
+  }
+
+  &__list{
+    display: flex;
+    padding: 2px;
+  }
+
+  &__item-wrap{}
+
+  &__item{
+    width: 22.7272727%;
+    flex-shrink: 0;
+
+    &:nth-child(n+2){
+      margin-left: 3.030303067%;
+    }
+  }
+
+  &__link{}
+
+  &__preview-wrap{
+    position: relative;
+    max-width: 220px;
+
+    &::after{
+      content: '';
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 18.181818%;
+      height: 28.5714285%;
+      background: url("/img/play.png") no-repeat center / contain;
+      z-index: 2;
+    }
+  }
+
+  &__preview{
+    display: block;
+  }
+
+  &__length{
+    position: absolute;
+    bottom: 3px;
+    right: 5px;
+    font-size: 12px;
+    color: #ffffff;
+  }
+
+  &__name-wrap{
+    margin-top: 5px;
+    font-size: 14px;
+  }
+
+  &__name{
+    color: #ffffff;
+  }
+
+  &__meta-row{
+    margin-top: 10px;
+    font-size: 12px;
+    color: #999999;
+  }
+
+  &__views{
+    position: relative;
+    padding-left: 22px;
+
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 18px;
+      height: 13px;
+      background: url("/img/views.png") no-repeat center;
+    }
+  }
+}
+
+.slick-initialized{
+  &.popular-videos{
+    &__list{
+      display: block;
+      padding: 0;
+    }
+  }
+
+  .popular-videos{
+    &__item{
+      width: 25.75757576%;
+
+      &:nth-child(n+2){
+        margin-left: 0;
+      }
+    }
+
+    &__item-wrap{
+      margin: 0 0 0 8.40909%;
+    }
+  }
+}

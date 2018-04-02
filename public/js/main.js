@@ -11,7 +11,23 @@ $(document).ready(function (){
         swipe: false,
         arrows: false,
         slidesToShow: 5,
-        slidesToScroll: 5
+        slidesToScroll: 5,
+        responsive: [
+            {
+                breakpoint: 1025,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4
+                }
+            },
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            }
+        ]
     });
 
     $('.js_previous_set').on('click', function () {
