@@ -246,7 +246,7 @@
 
         </div>
 
-        <div class="content__container container">
+        {{--<div class="content__container container">
             <div class="container__videos popular-videos">
                 <div class="popular-videos__top">
                     <div class="popular-videos__arrow popular-videos__arrow--left popular-videos__arrow--unactive js_previous_set"></div>
@@ -546,7 +546,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>--}}
 
         <div class="content__container container">
 
