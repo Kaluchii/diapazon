@@ -162,7 +162,7 @@
                         <p>Сеть кофеен «Кофе хауз» представила новый фирменный стиль и концепцию заведений. Ребрендинг будет проведён в 2018 году. В новых заведениях не будет официантов, а позиционировать «Кофе хауз» его владелец собирается как сеть кофеен быстрого обслуживания.</p>
                         <div class="content-block__gallery">
                             <div class="fotorama" data-nav="thumbs" data-navwidth="78.9473685%" data-thumbmargin="10"
-                                 data-thumbborderwidth="1" data-width="760" data-maxwidth="100%">
+                                 data-thumbborderwidth="1" data-width="794" data-maxwidth="100%">
                                 <a href="http://s.fotorama.io/1.jpg"><img src="http://s.fotorama.io/1.jpg" alt="" width="90" height="64"></a>
                                 <a href="http://s.fotorama.io/2.jpg"><img src="http://s.fotorama.io/2.jpg" alt="" width="90" height="64"></a>
                                 <a href="http://s.fotorama.io/okonechnikov/1-lo.jpg"><img src="http://s.fotorama.io/okonechnikov/1-lo.jpg" alt="" width="90" height="64"></a>
@@ -211,7 +211,7 @@
                     <ul class="news-box__list">
                         <li class="news-box__item news-cart">
                             <a href="#" class="news-cart__link">
-                                <img src="/dev_img/pl_n_1.jpg" alt="" class="news-cart__preview link-preview">
+                                <img src="/dev_img/pl_small_preview.jpg" alt="" class="news-cart__preview link-preview">
                                 <p class="news-cart__name-wrap">
                                     <span class="news-cart__name link">Обвиняемый в избиении полицейских бизнесмен заявил, что у него украли 70 млн тенге</span>
                                 </p>
@@ -224,7 +224,7 @@
                         </li>
                         <li class="news-box__item news-cart">
                             <a href="#" class="news-cart__link">
-                                <img src="/dev_img/pl_n_2.jpg" alt="" class="news-cart__preview link-preview">
+                                <img src="/dev_img/pl_small_preview.jpg" alt="" class="news-cart__preview link-preview">
                                 <p class="news-cart__name-wrap">
                                     <span class="news-cart__name link">Мошенницы обманули алматинцев на 1,5 млн долларов</span>
                                 </p>
@@ -237,7 +237,7 @@
                         </li>
                         <li class="news-box__item news-cart">
                             <a href="#" class="news-cart__link">
-                                <img src="/dev_img/pl_n_3.jpg" alt="" class="news-cart__preview link-preview">
+                                <img src="/dev_img/pl_small_preview.jpg" alt="" class="news-cart__preview link-preview">
                                 <p class="news-cart__name-wrap">
                                     <span class="news-cart__name link">Федерация тяжелой атлетики: Илья Ильин сможет громко и красиво вернуться</span>
                                 </p>
@@ -250,7 +250,7 @@
                         </li>
                         <li class="news-box__item news-cart">
                             <a href="#" class="news-cart__link">
-                                <img src="/dev_img/pl_n_4.jpg" alt="" class="news-cart__preview link-preview">
+                                <img src="/dev_img/pl_small_preview.jpg" alt="" class="news-cart__preview link-preview">
                                 <p class="news-cart__name-wrap">
                                     <span class="news-cart__name link">Как изменится "Нур Отан" с приходом Ашимбаева</span>
                                 </p>
@@ -263,7 +263,7 @@
                         </li>
                         <li class="news-box__item news-cart">
                             <a href="#" class="news-cart__link">
-                                <img src="/dev_img/pl_n_5.jpg" alt="" class="news-cart__preview link-preview">
+                                <img src="/dev_img/pl_small_preview.jpg" alt="" class="news-cart__preview link-preview">
                                 <p class="news-cart__name-wrap">
                                     <span class="news-cart__name link">Сапарбаев посоветовал акимам с "ханскими замашками" пасти скот</span>
                                 </p>
@@ -276,7 +276,7 @@
                         </li>
                         <li class="news-box__item news-cart">
                             <a href="#" class="news-cart__link">
-                                <img src="/dev_img/pl_n_6.jpg" alt="" class="news-cart__preview link-preview">
+                                <img src="/dev_img/pl_small_preview.jpg" alt="" class="news-cart__preview link-preview">
                                 <p class="news-cart__name-wrap">
                                     <span class="news-cart__name link">Биткоин опустился ниже 8 тыс. долларов</span>
                                 </p>
