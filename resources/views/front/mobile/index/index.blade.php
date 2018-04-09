@@ -140,7 +140,7 @@
                         <p class="news-cart__description">В кошельке находилось около 1 миллиона тенге и личные документы владельца, среди которых были контакты владельца.</p>
                         <div class="news-cart__meta-row">
                             <span class="news-cart__pub-time">08:25</span>
-                            <span class="news-cart__comments news-cart__comments--big">54</span>
+                            <a href="#" class="news-cart__comments news-cart__comments--big">54</a>
                             <span class="news-cart__views news-cart__views--big">214</span>
                         </div>
                     </div>

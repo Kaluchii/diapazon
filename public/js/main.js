@@ -77,7 +77,9 @@ $(document).ready(function (){
 
         items.each(function () {
             if ($(this).position().top === 0) {
-                visibleItemsLength += $(this).outerWidth(true);
+                var itemFullWidth = $(this)[0].getBoundingClientRect().width + parseInt($(this).css('margin-left'));
+                visibleItemsLength += itemFullWidth;
+                console.log('itemWidth = ' + (itemFullWidth));
             } else {
                 overflow = true;
             }

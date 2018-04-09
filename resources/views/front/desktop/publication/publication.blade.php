@@ -150,8 +150,10 @@
                             <div class="fb-share-button" data-href="" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Поделиться</a></div>
                         </div>
                         <h2>Запуск сверхтяжёлой ракеты Falcon Heavy</h2>
-                        <figure>
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/Rqf3J4ZOPCw" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+                        <figure class="content-block__video">
+                            <div class="content-block__video-container">
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/Rqf3J4ZOPCw" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+                            </div>
                             <figcaption>Автор видео — Space X</figcaption>
                         </figure>
                         <p>7 февраля <a href="#">SpaceX</a> осуществила первый запуск сверхтяжелой ракеты Falcon Heavy с автомобилем Tesla Roadster в качестве утяжелителя и космическим скафандром на борту. SpaceX успешно посадила боковые ускорители ракеты на платформы на суше, центральный ускоритель разбился при посадке и повредил плавучую платформу, а автомобиль

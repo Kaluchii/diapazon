@@ -21,7 +21,7 @@
         @yield('content')
 
         @include('front.mobile.footer')
-        {{--@yield('footer')--}}
+        @yield('footer')
     </div>
 
     {{--<div class="hide">
