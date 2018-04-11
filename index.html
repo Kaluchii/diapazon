@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="" type="image/gif">
 
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/mobile.css">
+    <link rel="stylesheet" href="../../css/m_style.css">
+    <link rel="stylesheet" href="../../css/m_adaptive.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script defer src="../../js/jquery.min.js"></script>
     <script defer src="../../js/fotorama.js"></script>
@@ -15,7 +15,7 @@
 </head>
 <body>
 <div class="main-wrapper">
-    <header class="header">
+    <!--<header class="header">
         <div class="header__top">
             <div class="header__top-container">
                 <div class="header__logo-tag-wrap">
@@ -49,20 +49,28 @@
                 </div>
             </nav>
         </div>
-    </header>
+    </header>-->
 
 
     <main class="content">
         <div class="content__main-topics main-topics">
             <div class="main-topics__container">
                 <p class="main-topics__title">Главные темы</p>
-                <ul class="main-topics__list">
-                    <li class="main-topics__item"><a href="#" class="main-topics__link link">Подорожание бензина</a></li>
-                    <li class="main-topics__item"><a href="#" class="main-topics__link link">Переход на латиницу</a></li>
-                    <li class="main-topics__item"><a href="#" class="main-topics__link link">Забастовка шахтеров</a></li>
-                    <li class="main-topics__item"><a href="#" class="main-topics__link link">Суд над Винокуровым</a></li>
-                    <li class="main-topics__item"><a href="#" class="main-topics__link link">Новый год в РК</a></li>
-                </ul>
+                <div class="main-topics__list js_podkat_source">
+                    <a href="#" class="main-topics__item"><span class="main-topics__link link">Подорожание бензина</span></a>
+                    <a href="#" class="main-topics__item"><span class="main-topics__link link">Переход на латиницу</span></a>
+                    <a href="#" class="main-topics__item"><span class="main-topics__link link">Забастовка шахтеров</span></a>
+                    <a href="#" class="main-topics__item"><span class="main-topics__link link">Суд над Винокуровым</span></a>
+                    <a href="#" class="main-topics__item"><span class="main-topics__link link">Новый год в РК</span></a>
+                </div>
+                <div class="main-topics__other-items js_podkat_roll">
+                    <span class="main-topics__link link js_podkat_toggle">Еще</span>
+                    <span class="main-topics__podkat-roll">
+                        <span class="main-topics__podkat-roll-list js_podkat_roll">
+                            <a href="" class="main-topics__podkat-roll-item"></a>
+                        </span>
+                    </span>
+                </div>
             </div>
         </div>
 
@@ -73,7 +81,7 @@
                     <p class="last-news__title">Последние новости</p>
                     <ul class="last-news__list">
                         <li class="last-news__item">
-                            <a href="#" class="last-news__name link-parent">
+                            <a href="#" class="last-news__name">
                                 <span class="last-news__link link">Крупный рост продаж доллара, евро и рубля произошел в обменниках РК</span>
                             </a>
                             <div class="last-news__meta-row">
@@ -82,7 +90,7 @@
                             </div>
                         </li>
                         <li class="last-news__item">
-                            <a href="#" class="last-news__name last-news__name--important link-parent">
+                            <a href="#" class="last-news__name last-news__name--important">
                                 <span class="last-news__link link">Профессии будущего: Как можно будет хорошо зарабатывать в Казахстане через 10 лет</span>
                             </a>
                             <div class="last-news__meta-row">
@@ -91,7 +99,7 @@
                             </div>
                         </li>
                         <li class="last-news__item">
-                            <a href="#" class="last-news__name link-parent">
+                            <a href="#" class="last-news__name">
                                 <span class="last-news__link link">В Алматы презентовали первую в Казахстане художественную книгу на латинице</span>
                             </a>
                             <div class="last-news__meta-row">
@@ -100,7 +108,7 @@
                             </div>
                         </li>
                         <li class="last-news__item">
-                            <a href="#" class="last-news__name last-news__name--important link-parent">
+                            <a href="#" class="last-news__name last-news__name--important">
                                 <span class="last-news__link link">Серьезный пожар охватил рынок в Алматы</span>
                             </a>
                             <div class="last-news__meta-row">
@@ -109,7 +117,7 @@
                             </div>
                         </li>
                         <li class="last-news__item">
-                            <a href="#" class="last-news__name link-parent">
+                            <a href="#" class="last-news__name">
                                 <span class="last-news__link link">Питбули загрызли собственную хозяйку во время прогулки в лесу</span>
                             </a>
                             <div class="last-news__meta-row">
@@ -118,7 +126,7 @@
                             </div>
                         </li>
                         <li class="last-news__item">
-                            <a href="#" class="last-news__name link-parent">
+                            <a href="#" class="last-news__name">
                                 <span class="last-news__link link">Гибель 52 человек в автобусе: водителей доставили в суд</span>
                             </a>
                             <div class="last-news__meta-row">
@@ -127,7 +135,7 @@
                             </div>
                         </li>
                         <li class="last-news__item">
-                            <a href="#" class="last-news__name link-parent">
+                            <a href="#" class="last-news__name">
                                 <span class="last-news__link link">Когда потеплеет в Казахстане и другие новости апокаллипсиса</span>
                             </a>
                             <div class="last-news__meta-row">
@@ -136,7 +144,7 @@
                             </div>
                         </li>
                         <li class="last-news__item">
-                            <a href="#" class="last-news__name link-parent">
+                            <a href="#" class="last-news__name">
                                 <span class="last-news__link link">Мальчик умер после тренировки по таэквандо в Атырау</span>
                             </a>
                             <div class="last-news__meta-row">
@@ -145,7 +153,7 @@
                             </div>
                         </li>
                         <li class="last-news__item">
-                            <a href="#" class="last-news__name link-parent">
+                            <a href="#" class="last-news__name">
                                 <span class="last-news__link link">Крупный рост продаж доллара, евро и рубля произошел в обменниках РК</span>
                             </a>
                             <div class="last-news__meta-row">
@@ -154,7 +162,7 @@
                             </div>
                         </li>
                         <li class="last-news__item">
-                            <a href="#" class="last-news__name link-parent">
+                            <a href="#" class="last-news__name">
                                 <span class="last-news__link link">Профессии будущего: Как можно будет хорошо зарабатывать в Казахстане через 10 лет</span>
                             </a>
                             <div class="last-news__meta-row">
@@ -188,8 +196,8 @@
                     </div>
                     <ul class="news-box__list">
                         <li class="news-box__item news-cart">
-                            <a href="#" class="news-cart__link link-parent">
-                                <img src="../../dev_img/pl_n_1.jpg" alt="" class="news-cart__preview link-preview">
+                            <a href="#" class="news-cart__link">
+                                <img src="../../dev_img/pl_small_preview.jpg" alt="" class="news-cart__preview link-preview">
                                 <p class="news-cart__name-wrap">
                                     <span class="news-cart__name link">Обвиняемый в избиении полицейских бизнесмен заявил, что у него украли 70 млн тенге</span>
                                 </p>
@@ -201,8 +209,8 @@
                             </div>
                         </li>
                         <li class="news-box__item news-cart">
-                            <a href="#" class="news-cart__link link-parent">
-                                <img src="../../dev_img/pl_n_2.jpg" alt="" class="news-cart__preview link-preview">
+                            <a href="#" class="news-cart__link">
+                                <img src="../../dev_img/pl_small_preview.jpg" alt="" class="news-cart__preview link-preview">
                                 <p class="news-cart__name-wrap">
                                     <span class="news-cart__name link">Мошенницы обманули алматинцев на 1,5 млн долларов</span>
                                 </p>
@@ -214,8 +222,8 @@
                             </div>
                         </li>
                         <li class="news-box__item news-cart">
-                            <a href="#" class="news-cart__link link-parent">
-                                <img src="../../dev_img/pl_n_3.jpg" alt="" class="news-cart__preview link-preview">
+                            <a href="#" class="news-cart__link">
+                                <img src="../../dev_img/pl_small_preview.jpg" alt="" class="news-cart__preview link-preview">
                                 <p class="news-cart__name-wrap">
                                     <span class="news-cart__name link">Федерация тяжелой атлетики: Илья Ильин сможет громко и красиво вернуться</span>
                                 </p>
@@ -227,8 +235,8 @@
                             </div>
                         </li>
                         <li class="news-box__item news-cart">
-                            <a href="#" class="news-cart__link link-parent">
-                                <img src="../../dev_img/pl_n_4.jpg" alt="" class="news-cart__preview link-preview">
+                            <a href="#" class="news-cart__link">
+                                <img src="../../dev_img/pl_small_preview.jpg" alt="" class="news-cart__preview link-preview">
                                 <p class="news-cart__name-wrap">
                                     <span class="news-cart__name link">Как изменится "Нур Отан" с приходом Ашимбаева</span>
                                 </p>
@@ -240,8 +248,8 @@
                             </div>
                         </li>
                         <li class="news-box__item news-cart">
-                            <a href="#" class="news-cart__link link-parent">
-                                <img src="../../dev_img/pl_n_5.jpg" alt="" class="news-cart__preview link-preview">
+                            <a href="#" class="news-cart__link">
+                                <img src="../../dev_img/pl_small_preview.jpg" alt="" class="news-cart__preview link-preview">
                                 <p class="news-cart__name-wrap">
                                     <span class="news-cart__name link">Сапарбаев посоветовал акимам с "ханскими замашками" пасти скот</span>
                                 </p>
@@ -253,8 +261,8 @@
                             </div>
                         </li>
                         <li class="news-box__item news-cart">
-                            <a href="#" class="news-cart__link link-parent">
-                                <img src="../../dev_img/pl_n_6.jpg" alt="" class="news-cart__preview link-preview">
+                            <a href="#" class="news-cart__link">
+                                <img src="../../dev_img/pl_small_preview.jpg" alt="" class="news-cart__preview link-preview">
                                 <p class="news-cart__name-wrap">
                                     <span class="news-cart__name link">Биткоин опустился ниже 8 тыс. долларов</span>
                                 </p>
@@ -266,8 +274,8 @@
                             </div>
                         </li>
                         <li class="news-box__item news-cart">
-                            <a href="#" class="news-cart__link link-parent">
-                                <img src="../../dev_img/pl_n_3.jpg" alt="" class="news-cart__preview link-preview">
+                            <a href="#" class="news-cart__link">
+                                <img src="../../dev_img/pl_small_preview.jpg" alt="" class="news-cart__preview link-preview">
                                 <p class="news-cart__name-wrap">
                                     <span class="news-cart__name link">Федерация тяжелой атлетики: Илья Ильин сможет громко и красиво вернуться</span>
                                 </p>
@@ -279,8 +287,8 @@
                             </div>
                         </li>
                         <li class="news-box__item news-cart">
-                            <a href="#" class="news-cart__link link-parent">
-                                <img src="../../dev_img/pl_n_1.jpg" alt="" class="news-cart__preview link-preview">
+                            <a href="#" class="news-cart__link">
+                                <img src="../../dev_img/pl_small_preview.jpg" alt="" class="news-cart__preview link-preview">
                                 <p class="news-cart__name-wrap">
                                     <span class="news-cart__name link">Обвиняемый в избиении полицейских бизнесмен заявил, что у него украли 70 млн тенге</span>
                                 </p>
@@ -292,8 +300,8 @@
                             </div>
                         </li>
                         <li class="news-box__item news-cart">
-                            <a href="#" class="news-cart__link link-parent">
-                                <img src="../../dev_img/pl_n_2.jpg" alt="" class="news-cart__preview link-preview">
+                            <a href="#" class="news-cart__link">
+                                <img src="../../dev_img/pl_small_preview.jpg" alt="" class="news-cart__preview link-preview">
                                 <p class="news-cart__name-wrap">
                                     <span class="news-cart__name link">Мошенницы обманули алматинцев на 1,5 млн долларов</span>
                                 </p>
@@ -305,8 +313,8 @@
                             </div>
                         </li>
                         <li class="news-box__item news-cart">
-                            <a href="#" class="news-cart__link link-parent">
-                                <img src="../../dev_img/pl_n_1.jpg" alt="" class="news-cart__preview link-preview">
+                            <a href="#" class="news-cart__link">
+                                <img src="../../dev_img/pl_small_preview.jpg" alt="" class="news-cart__preview link-preview">
                                 <p class="news-cart__name-wrap">
                                     <span class="news-cart__name link">Обвиняемый в избиении полицейских бизнесмен заявил, что у него украли 70 млн тенге</span>
                                 </p>
@@ -318,8 +326,8 @@
                             </div>
                         </li>
                         <li class="news-box__item news-cart">
-                            <a href="#" class="news-cart__link link-parent">
-                                <img src="../../dev_img/pl_n_2.jpg" alt="" class="news-cart__preview link-preview">
+                            <a href="#" class="news-cart__link">
+                                <img src="../../dev_img/pl_small_preview.jpg" alt="" class="news-cart__preview link-preview">
                                 <p class="news-cart__name-wrap">
                                     <span class="news-cart__name link">Мошенницы обманули алматинцев на 1,5 млн долларов</span>
                                 </p>
@@ -331,8 +339,8 @@
                             </div>
                         </li>
                         <li class="news-box__item news-cart">
-                            <a href="#" class="news-cart__link link-parent">
-                                <img src="../../dev_img/pl_n_3.jpg" alt="" class="news-cart__preview link-preview">
+                            <a href="#" class="news-cart__link">
+                                <img src="../../dev_img/pl_small_preview.jpg" alt="" class="news-cart__preview link-preview">
                                 <p class="news-cart__name-wrap">
                                     <span class="news-cart__name link">Федерация тяжелой атлетики: Илья Ильин сможет громко и красиво вернуться</span>
                                 </p>
@@ -344,8 +352,8 @@
                             </div>
                         </li>
                         <li class="news-box__item news-cart">
-                            <a href="#" class="news-cart__link link-parent">
-                                <img src="../../dev_img/pl_n_4.jpg" alt="" class="news-cart__preview link-preview">
+                            <a href="#" class="news-cart__link">
+                                <img src="../../dev_img/pl_small_preview.jpg" alt="" class="news-cart__preview link-preview">
                                 <p class="news-cart__name-wrap">
                                     <span class="news-cart__name link">Как изменится "Нур Отан" с приходом Ашимбаева</span>
                                 </p>
@@ -357,8 +365,8 @@
                             </div>
                         </li>
                         <li class="news-box__item news-cart">
-                            <a href="#" class="news-cart__link link-parent">
-                                <img src="../../dev_img/pl_n_5.jpg" alt="" class="news-cart__preview link-preview">
+                            <a href="#" class="news-cart__link">
+                                <img src="../../dev_img/pl_small_preview.jpg" alt="" class="news-cart__preview link-preview">
                                 <p class="news-cart__name-wrap">
                                     <span class="news-cart__name link">Сапарбаев посоветовал акимам с "ханскими замашками" пасти скот</span>
                                 </p>
@@ -370,8 +378,8 @@
                             </div>
                         </li>
                         <li class="news-box__item news-cart">
-                            <a href="#" class="news-cart__link link-parent">
-                                <img src="../../dev_img/pl_n_6.jpg" alt="" class="news-cart__preview link-preview">
+                            <a href="#" class="news-cart__link">
+                                <img src="../../dev_img/pl_small_preview.jpg" alt="" class="news-cart__preview link-preview">
                                 <p class="news-cart__name-wrap">
                                     <span class="news-cart__name link">Биткоин опустился ниже 8 тыс. долларов</span>
                                 </p>
@@ -389,38 +397,6 @@
                 </div>
             </div>
 
-
-            <div class="container__col-small col-small">
-                <div class="col-small__situation-info situation-info">
-                    <div class="situation-info__search-wrap">
-                        <input type="text" class="situation-info__search" placeholder="Поиск по сайту">
-                    </div>
-                    <div class="situation-info__rows">
-                        <p class="situation-info__row">Пятница, 29 декабря, 16:12</p>
-                        <p class="situation-info__row"><span class="situation-info__bold">В Актобе</span> -3°, снег</p>
-                        <p class="situation-info__row"><a href="#" class="situation-info__link link">Погода на неделю</a></p>
-                    </div>
-                    <div class="situation-info__rows situation-info__rows--courses">
-                        <p class="situation-info__row"><span class="situation-info__bold">Курсы валют</span></p>
-                        <p class="situation-info__row">$ 335.33 <span class="situation-info__delimiter">•</span> € 395.49 <span class="situation-info__delimiter">•</span> ₽ 5.7</p>
-                    </div>
-                </div>
-
-                <div class="col-small__socials socials">
-                    <p class="socials__title">Следите за новостями</p>
-                    <ul class="socials__list">
-                        <li class="socials__item"><a href="#" class="socials__link socials__link--vk"></a></li>
-                        <li class="socials__item"><a href="#" class="socials__link socials__link--ok"></a></li>
-                        <li class="socials__item"><a href="#" class="socials__link socials__link--fb"></a></li>
-                        <li class="socials__item"><a href="#" class="socials__link socials__link--tw"></a></li>
-                        <li class="socials__item"><a href="#" class="socials__link socials__link--inst"></a></li>
-                    </ul>
-                </div>
-
-                <div class="col-small__banner banner">
-                    <img src="../../dev_img/banner_right.png" alt="">
-                </div>
-            </div>
         </div>
     </main>
 

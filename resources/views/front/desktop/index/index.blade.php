@@ -12,13 +12,19 @@
                     <a href="#" class="main-topics__item link-parent"><span class="main-topics__link link">Суд над Винокуровым</span></a>
                     <a href="#" class="main-topics__item link-parent"><span class="main-topics__link link">Новый год в РК</span></a>
                 </div>
-                <div class="main-topics__other-items link-parent js_podkat_roll">
-                    <span class="main-topics__link link js_podkat_toggle">Еще</span>
-                    <span class="main-topics__podkat-roll">
-                        <span class="main-topics__podkat-roll-list js_podkat_roll">
-                            <a href="" class="main-topics__podkat-roll-item"></a>
-                        </span>
-                    </span>
+                <div class="main-topics__other-items js_podkat_roll">
+                    <div class="main-topics__link-wrap link-parent js_podkat_toggle">
+                        <span class="main-topics__link link js_podkat_toggle">Еще</span>
+                    </div>
+                    <div class="main-topics__podkat-roll">
+                        <div class="main-topics__podkat-roll-list js_podkat_roll_">
+                            <a href="" class="main-topics__item main-topics__item--overflow link-parent"><span class="main-topics__link link">Подорожание бензина</span></a>
+                            <a href="" class="main-topics__item main-topics__item--overflow link-parent"><span class="main-topics__link link">Переход на латиницу</span></a>
+                            <a href="" class="main-topics__item main-topics__item--overflow link-parent"><span class="main-topics__link link">Забастовка шахтеров</span></a>
+                            <a href="" class="main-topics__item main-topics__item--overflow link-parent"><span class="main-topics__link link">Суд над Винокуровым</span></a>
+                            <a href="" class="main-topics__item main-topics__item--overflow link-parent"><span class="main-topics__link link">Новый год в РК</span></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

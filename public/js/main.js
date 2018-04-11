@@ -58,42 +58,46 @@ $(document).ready(function (){
     // end         ///////////////
 
 
-    // Сбор в подкат   ///////////////
-    // start          ///////////////
+    // Подкат      ///////////////
+    // start      ///////////////
 
-    $window.on('load resize', function () {
+    picking();
+    $window.on('resize', function () {
         picking();
     });
 
     function picking() {
-        var visibleItemsLength = 0,
-            items,
-            overflow = false,
-            list = $('.js_podkat_source');
+        var list = $('.js_podkat_source');
 
-        items = list.children();
+        $('.js_podkat_roll').hide();
+        if (overflowElements(list).count !== 0) {
+            $('.js_podkat_roll').show();
+            list.width(overflowElements(list).width);
+        }
+    }
+
+    function overflowElements(list) {
+        var items,
+            visibleItemsLength = 0,
+            hidingElementsCount = 0;
 
         list.css('width', 'auto');
+        items = list.children();
 
         items.each(function () {
             if ($(this).position().top === 0) {
                 var itemFullWidth = $(this)[0].getBoundingClientRect().width + parseInt($(this).css('margin-left'));
                 visibleItemsLength += itemFullWidth;
-                console.log('itemWidth = ' + (itemFullWidth));
             } else {
-                overflow = true;
+                hidingElementsCount++;
             }
         });
-        $('.js_podkat_roll').toggle(overflow);
-        console.log('visibleItemsLength = ' + (visibleItemsLength));
-        if (overflow) {
-            list.width(visibleItemsLength + 1);
-        }
+        return { count: hidingElementsCount, width: visibleItemsLength }
     }
 
-    function resizeOverflowList() {
-    }
+    $('.js_podkat_toggle').on('click', function () {
+    });
 
-    // Сбор в подкат   ///////////////
-    // end            ///////////////
+    // Подкат      ///////////////
+    // end        ///////////////
 });

@@ -43,27 +43,77 @@
         pointer-events: none;
       }
     }
+
+    &--overflow{
+      padding: 7px 15px;
+
+      &::before{
+        display: none;
+      }
+
+      &:nth-child(n){
+        margin-left: 0;
+      }
+    }
   }
 
   &__other-items{
     position: relative;
     display: none;
     height: 100%;
-    padding: 15px 5px;
     line-height: 1;
     margin-left: 50px;
     cursor: pointer;
+    z-index: 1;
 
     &::before{
       content: '•';
       position: absolute;
+      top: 14px;
       left: -27px;
       font-size: 18px;
       color: #333333;
       pointer-events: none;
     }
+
+    &:hover{
+      box-shadow: 0 0 4px #000000;
+
+      &::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 4px;
+        background: #FFFFFF;
+      }
+
+      .main-topics__podkat-roll{
+        display: block;
+      }
+    }
   }
 
-  &__link{
+  &__link-wrap{
+    height: 100%;
+    padding: 15px 5px;
+  }
+
+  &__link{}
+
+  &__podkat-roll{
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #ffffff;
+    box-shadow: 0 0 4px #000000;
+  }
+
+  &__podkat-roll-list{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
   }
 }
